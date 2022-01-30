@@ -1,10 +1,22 @@
 
 .main {
     background-color: #31343a; color:  white;
-    /*min-height: 600px;*/
+    min-height: 600px;
 }
 
 .hello {
     font-size: x-large;
     color: white;
+}
+
+.skillBar {
+    height: 2px;
+    background-color: gray;
+}
+
+.skillsData {
+    height: 2px;
+    background-color: green;
+    transition: width 2s;
+    width: 75%;
 }

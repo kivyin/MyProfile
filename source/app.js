@@ -22,9 +22,9 @@ var app = new Vue({
             { id: 5, link: 'version.html', text: 'Version' }
         ],
         skills: [
-            { name: "HTML", rating: "8", url: "#HTML", shortDescription: "Used on all Service Portal projects" },
-            { name: "CSS", rating: "7" },
-            { name: "JavaScript", rating: "7.5" },
+            { name: "HTML", rating: .8, url: "#HTML", shortDescription: "Used on all Service Portal projects" },
+            { name: "CSS", rating: .7 },
+            { name: "JavaScript", rating: .75 },
             { name: "angular", rating: "" },
             { name: "vuejs", rating: "" },
             { name: "MSSql", rating: "" },
