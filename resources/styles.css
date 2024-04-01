@@ -2,14 +2,19 @@
 .main {
     background-color: #31343a; 
     color:  white;
-    height: 100vh;
+   
     padding-top: 60px ;
     padding-bottom: 60px ;
+}
+
+.content {
+    height: 80vh;
 }
 
 .hello {
     font-size: x-large;
     color: white;
+    text-wrap: wrap;
 }
 
 .skills {
@@ -35,5 +40,18 @@
     height: 75%;
     width: 75%;
         opacity: 0.8; /* Adjust opacity as desired */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow */
+        box-shadow: 5px 5px 10px rgba(255, 255, 255, 1); /* Add a shadow */
 }
+
+.version-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.experience {
+    padding-top: 20px;
+}
+
+.exp-items {
+        border-top: white solid thin;
+    }

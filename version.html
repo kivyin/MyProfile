@@ -12,36 +12,47 @@
 </head>
 
 <body>
-  <div class="container-fluid" id="app">
-    <div class="row">
-      <div class="col-sm-12 pl-0 pr-0">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" v-bind:href="nav[0].link">{{nav[0].text}}</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item" v-bind:class="{ active: isActivePage(test.link) }" v-for="test in nav.slice(1)"><a
-                  v-bind:href="test.link" class="nav-link">{{ test.text
-                  }}</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </div>
-    <div class="row main">
-      <div class="col-sm-12 text-center mh-100 align-self-center">
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <ul>
-              <li v-for="version in versionList">{{version.date}} {{version.number}} {{version.notes}}</li>
-            </ul>
-          </div>
+  <div class="container-fluid main" id="app">
+    <section class="content">
+      <div class="row">
+        <div class="col-sm-12 pl-0 pr-0">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" v-bind:href="nav[0].link">{{nav[0].text}}</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item" v-bind:class="{ active: isActivePage(test.link) }" v-for="test in nav.slice(1)"><a
+                    v-bind:href="test.link" class="nav-link">{{ test.text
+                    }}</a></li>
+              </ul>
+            </div>
+          </nav>
         </div>
       </div>
-    </div>
+      <div class="row">
+        <div class="col-sm-12 mh-100 align-self-center">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Version</th>
+                <th scope="col">Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="version in versionList">
+                <td>{{version.date}}</td>
+                <td>{{version.number}}</td>
+                <td>{{version.notes}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
   </div>
 
   <!-- JavaScript Bundle with Popper -->
