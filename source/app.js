@@ -1,6 +1,5 @@
 console.log("hello world");
 
-
 Vue.component('nav-item', {
     props: ['nav'],
     template: '<li class="nav-item"><a class="nav-link" :class="{nav.id==0 ? brandClass}" :href="nav.link">{{nav.text}}</a></li>'
