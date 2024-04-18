@@ -8,7 +8,7 @@
 }
 
 .content {
-    height: 80vh;
+    height: 100vh;
 }
 
 .hello {
@@ -18,20 +18,22 @@
 }
 
 .skills {
-    text-align: center;
+    text-align: left;
+    margin-bottom: 10px;
 }
 
 .skillBar {
-    height: 5px;
+    border-radius: 10px;
     background-color: white;
     
 }
 
 .skillsData {
-    height: 5px;
+    border-radius: 10px;
+    padding-right: 5px;
     /* background-color: rgb(165, 238, 165); */
     background: rgb(0,8,13);
-    background: linear-gradient(90deg, rgba(247,20,2,0.9387955865940126) 0%, rgba(114,251,34,1) 49%);
+    background: linear-gradient(90deg, rgba(247,20,2,0.9387955865940126) 0%, rgb(64, 102, 238) 49%);
     transition: width 2s;
     width: 75%;
 }
@@ -52,6 +54,11 @@
     padding-top: 20px;
 }
 
+.exp-header {
+    width: 100%;
+    border-bottom: white solid thin;
+}
+
 .exp-items {
-        border-top: white solid thin;
+        
 }

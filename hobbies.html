@@ -32,8 +32,19 @@
           </nav>
         </div>
       </div>
+      <div class="row">
+        <div class="container page">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="skills" v-for="hobby in hobbies">
+                <div>{{hobby.name}}</div>
+                <div>{{hobby.description}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
-    
+
   </div>
 
   <!-- JavaScript Bundle with Popper -->

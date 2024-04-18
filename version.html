@@ -45,7 +45,7 @@
               <tr v-for="version in versionList">
                 <td>{{version.date}}</td>
                 <td>{{version.number}}</td>
-                <td>{{version.notes}}</td>
+                <td><ul><li v-for="note in version.notes">{{note}}</li></ul></td>
               </tr>
             </tbody>
           </table>

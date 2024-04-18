@@ -35,10 +35,11 @@
         <div class="container page">
           <div class="row">
             <div class="col-lg-6">
-              <div class="skills" v-for="skill in skills">
-                {{skill.name}}
+              <div class="skills" v-for="skill in sortedSkills">
+                
                 <div class="skillBar">
                   <div class="skillsData text-right" v-bind:style="{width: skill.rating * 100 + '%'}">
+                    {{skill.name}} {{skill.rating * 100}}%
                   </div>
                 </div>
               </div>
